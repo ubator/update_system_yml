@@ -1,0 +1,5 @@
+--- # This is updating remote machines
+- hosts: myhosts
+  tasks: 
+    - name: Update system
+      yum: name=* state=latest
